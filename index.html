@@ -1,32 +1,141 @@
 <!doctype html>
+
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="http://openlayers.org/en/v3.12.1/css/ol.css" type="text/css">
-    <style>
-      .map {
-        height: 400px;
-        width: 100%;
-      }
-    </style>
-    <script src="http://openlayers.org/en/v3.12.1/build/ol.js" type="text/javascript"></script>
-    <title>OpenLayers 3 example</title>
-  </head>
-  <body>
-    <h2>My Map</h2>
-    <div id="map" class="map"></div>
-    <script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.MapQuest({layer: 'sat'})
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([37.41, 8.82]),
-          zoom: 4
-        })
-      });
-    </script>
-  </body>
-</html>
+
+<head>
+  <title>   :) </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://openlayers.org/en/v3.12.1/css/ol.css" type="text/css">
+  <link rel="stylesheet" href="css/map.css">
+  <style>
+    .map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+  <script src="http://openlayers.org/en/v3.12.1/build/ol.js" type="text/javascript"></script>
+  <title>OpenLayers 3 example</title>
+</head>
+
+<body>
+    <header>
+      <h1>  <strong> MaCarte </strong> pour vous  </h1>
+    </header>
+
+    <section name="boutons de navigation">
+      <nav>
+        <myButton>  <a href="#about"> about </a> </myButton>
+        <myButton> <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav> demo </a></myButton>
+        <myButton> <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav> story </a></myButton>
+      </nav>
+    </section>
+
+  <article>
+
+    <section id="about">
+      <header>
+        <h2>   What is all about ?  </h2>
+      </header>
+
+      <p> Le contenu du  aragraphe..Le contenu du paragraphe..Le contenu d u paragraphe..Le contenu du par agraphe.
+        .v Le contenu  du paragraphe. .Le c ntenu du parag raphe..Le contenu du  paragraphe..Le c ontenu du paragraphe..
+        Le contenu du paragraphe ..Le contenu du paragrap he ..Le contenu du par agraphe. .Le contenu  du paragraphe.. </p>
+
+      <blockquote>
+        La citationLa citationLa citationLa citationLa citationLa citationLa citationLa citation
+      </blockquote>
+
+      <p>
+        L'autre paragraphe avec des liens hypertexte, le <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav>lien1</a>, le <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav>lien#2</a>
+      </p>
+
+      <ul>
+        <li> 1ere ligne </li>
+        <li> 2ème ligne </li>
+        <ol>
+          <li> ligne numérotée </i>
+            <li> ligne numérotée </i>
+            </ol>
+            <li> 3ème ligne non numérotée</li>
+          </ul>
+
+      </section>
+
+      <section>
+        <h2> la carte  </h2>
+        <p> Cette carte n'est pas générée par ce code   </p>
+
+        <figure>
+          <pre>
+            <code> trucs de hackers... code machin </code>
+          </pre>
+
+          <caption>    C'est un code utile  </caption>
+        </figure>
+
+        <p> Paragraphe de conclusion </p>
+        <div>
+        <iframe width="800" height="600" frameborder="0" scrolling="no"   src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=buenos+aires&amp;sll=37.0625,-95.677068&amp;sspn=38.638819,80.859375&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Buenos+Aires,+Argentina&amp;z=11&amp;ll=-34.603723,-58.381593&amp;output=embed">
+        </iframe>
+        <div>
+      </section>
+
+      <a href""=Download!</a>
+
+        <section>
+          <h2>My Map</h2>
+          <div id="map" class="map"></div>
+          <script type="text/javascript">
+            var map = new ol.Map({
+              target: 'map',
+              layers: [
+                new ol.layer.Tile({
+                  source: new ol.source.MapQuest({layer: 'sat'})
+                })
+              ],
+              view: new ol.View({
+                center: ol.proj.fromLonLat([37.41, 8.82]),
+                zoom: 4
+              })
+            });
+          </script>
+        </section>
+
+
+  </article>
+    <footer>
+			<div>
+				<section>
+					<header>
+						<h3>Blog</h3>
+					</header>
+				<p>lien vers le <a href=http://stackoverflow.com/> blog </a></p>
+				</section>
+
+				<section>
+					<header>
+						<h3>Twitter</h3>
+          </header>
+					<p>lien vers le <a href=http://stackoverflow.com/> twitter  </a></p>
+				</section>
+
+				<section>
+					<header>
+						<h3>Follow the leader</h3>
+					</header>
+					<a href="https://twitter.com/ClaudioKarim" class="twitter-follow-button" data-show-count="false">Follow @ClaudioKarim</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <address> thierry@daz.fr </adresse>
+				</section>
+			</div>
+		</footer>
+
+
+
+
+
+      </body>
+
+      </html>
