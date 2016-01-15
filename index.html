@@ -88,7 +88,7 @@
           <h2>My Map</h2>
           <div id="map" class="map"></div>
           <script type="text/javascript">
-            var map = new ol.Map({
+                      var map = new ol.Map({
               target: 'map',
               layers: [
                 new ol.layer.Tile({
@@ -100,9 +100,29 @@
                 zoom: 4
               })
             });
+                    var Sirene = [
+                      {"name":"Thil",
+                      "lon":-0.695463,
+                      "lat":44.871477,
+                      },
+
+                      {"name":"Bruges",
+                      "lon":-0.615494,
+                      "lat":44.900790,
+                      },
+
+                      {"name":"Cantinolle",
+                      "lon":-0.663624,
+                      "lat":44.896230,
+                      }
+                    ]
+
+                    Sirene.forEach(function(element){
+                    	console.log(element)
+                    });
+
           </script>
         </section>
-
 
   </article>
     <footer>
